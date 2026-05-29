@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="card">
+
+    <h2>Add Contact</h2>
+
+    <form method="POST" action="/add-contact">
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            required>
+
+        <input
+            type="text"
+            name="phone"
+            placeholder="Phone">
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Email">
+
+        <input
+            type="text"
+            name="company"
+            placeholder="Company">
+
+        <textarea
+            name="notes"
+            placeholder="Notes"></textarea>
+
+        <button type="submit">
+            Add Contact
+        </button>
+
+    </form>
+
+    <br>
+
+    <a href="/view-contacts">
+        View Contacts
+    </a>
+
+</div>
+
+</body>
+</html>

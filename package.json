@@ -1,0 +1,15 @@
+{
+  "name": "personal-crm",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "latest",
+    "body-parser": "latest",
+    "cors": "latest",
+    "express": "latest",
+    "mysql2": "latest"
+  }
+}

@@ -1,0 +1,18 @@
+CREATE DATABASE personal_crm;
+USE personal_crm;
+CREATE TABLE users (
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100),
+email VARCHAR(100) UNIQUE,
+password VARCHAR(255)
+);
+CREATE TABLE contacts (
+id INT AUTO_INCREMENT PRIMARY KEY,
+user_id INT,
+name VARCHAR(100),
+phone VARCHAR(20),
+email VARCHAR(100),
+company VARCHAR(100),
+notes TEXT,
+FOREIGN KEY(user_id) REFERENCES users(id)
+);
